@@ -1,0 +1,119 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+.column1{
+  flex: 50%;
+  height: 100vh;
+  background-color: rgb(221, 90, 14);
+  position: relative;
+ 
+}
+
+.item {
+  padding: 20px;
+}
+.column2{
+  flex: 50%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between buttons */
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Optional: set a maximum width */
+  margin: 0 auto; /* Center the button container */
+}
+
+
+.login-button {
+  flex: 1; /* Make buttons equal in width */
+  
+    margin: 5px; /* Space between buttons */
+    padding: 12px; /* Padding for button size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000307; /* Button background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.form-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between the items */
+  margin-top: 10px; /* Space from previous elements */
+  font-weight: bolder ;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center; /* Align checkbox and text */
+  font-size: 14px; /* Font size */
+}
+
+.remember-me input {
+  margin-right: 5px; /* Space between checkbox and text */
+}
+
+.forgot-password {
+  font-size: 14px; /* Font size */
+  color: maroon; /* Link color */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+}
+
+.forgot-password:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+.email{
+  margin-bottom: 15px;
+  padding-right: 100px;
+  border-radius: 5px;
+}
+
+.password{
+  margin-bottom: 15px;
+  padding-right: 100px;
+  border-radius: 5px;
+}
+
+.elabel{
+ color:gray;
+}
+
+.plabel{
+  color:gray;
+}
+
+.container{
+margin-left: 0px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
